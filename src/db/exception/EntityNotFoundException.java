@@ -1,16 +1,16 @@
 package db.exception;
 
-public class EntityNotFoundException extends Exception{
+public class EntityNotFoundException extends RuntimeException{
 
-    EntityNotFoundException(){
+    public EntityNotFoundException(){
       super("Cannot find entity.");
     }
 
-    EntityNotFoundException(String massage){
+    public EntityNotFoundException(String massage){
         super(massage);
     }
 
-    EntityNotFoundException(int id){
-        super("Cannot find entity with id = {" + id + "}");
+    public EntityNotFoundException(int id){
+        super("Cannot find entity with id = " + id);
     }
 }
