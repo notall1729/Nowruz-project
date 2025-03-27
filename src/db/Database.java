@@ -29,4 +29,14 @@ public class Database {
         }
         throw new EntityNotFoundException(id);
     }
+
+    public static void update(Entity e) throws EntityNotFoundException{
+        for (int i = 0; i < entities.size(); i++){
+            if(entities.get(i).id == e.id){
+                entities.set(i, e);
+                return;
+            }
+        }
+        throw new EntityNotFoundException();
+    }
 }
