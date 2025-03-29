@@ -1,14 +1,25 @@
 package db;
 
 import db.exception.EntityNotFoundException;
-import java.util.ArrayList;
+import db.exception.InvalidEntityException;
+
+import java.util.*;
 
 public class Database {
     private static ArrayList<Entity> entities = new ArrayList<>();
+    private static HashMap<Integer, Validator> validators;
 
-    public static void add(Entity e){
+    public static void add(Entity e) throws InvalidEntityException {
+        validateEntity(e);
         e.copy().id = entities.size() + 1;
         entities.add(e.copy());
+    }
+
+    private static void validateEntity (Entity entity) throws InvalidEntityException{
+        Validator validator = validators.get(entity.getEntityCode());
+
+        if(validator != null)
+         validator.validate(entity);
     }
 
     public static Entity get(int id) throws EntityNotFoundException{
@@ -31,6 +42,8 @@ public class Database {
     }
 
     public static void update(Entity e) throws EntityNotFoundException{
+        validateEntity(e);
+        
       for (int i = 0; i < entities.size(); i++){
           if(entities.get(i).id == e.id){
               entities.set(i, e);
@@ -38,5 +51,13 @@ public class Database {
           }
       }
       throw new EntityNotFoundException();
+    }
+
+    public static void registerValidator(int entityCode, Validator validator) {
+        for (int i = 0; i < validators.size(); ++ i)
+            if(validators.containsKey(entityCode))
+                throw new IllegalArgumentException("Validator for entity code" + entityCode + "already exists.");
+
+        validators.put(entityCode, validator);
     }
 }
