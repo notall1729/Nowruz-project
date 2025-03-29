@@ -43,7 +43,7 @@ public class Database {
 
     public static void update(Entity e) throws EntityNotFoundException{
         validateEntity(e);
-        
+
       for (int i = 0; i < entities.size(); i++){
           if(entities.get(i).id == e.id){
               entities.set(i, e);
