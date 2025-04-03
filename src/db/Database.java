@@ -7,7 +7,7 @@ import java.util.*;
 
 public class Database {
     private static ArrayList<Entity> entities = new ArrayList<>();
-    private static HashMap<Integer, Validator> validators;
+    private static HashMap<Integer, Validator> validators = new HashMap<>();
 
     public static void add(Entity e) throws InvalidEntityException {
         validateEntity(e);
@@ -41,16 +41,16 @@ public class Database {
      throw new EntityNotFoundException(id);
     }
 
-    public static void update(Entity e) throws EntityNotFoundException{
+    public static void update(Entity e) throws EntityNotFoundException, InvalidEntityException{
         validateEntity(e);
 
       for (int i = 0; i < entities.size(); i++){
           if(entities.get(i).id == e.id){
-              entities.set(i, e);
+              entities.set(i, e.copy());
               return;
           }
       }
-      throw new EntityNotFoundException();
+      throw new EntityNotFoundException(e.id);
     }
 
     public static void registerValidator(int entityCode, Validator validator) {
