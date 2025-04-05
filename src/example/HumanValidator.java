@@ -4,8 +4,6 @@ import db.Entity;
 import db.Validator;
 import db.exception.InvalidEntityException;
 
-import javax.management.InvalidAttributeValueException;
-
 public class HumanValidator implements Validator {
     @Override
     public void validate(Entity entity) throws InvalidEntityException{
