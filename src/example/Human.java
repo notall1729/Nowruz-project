@@ -1,6 +1,7 @@
 package example;
 
 public class Human extends db.Entity {
+    public static final int HUMAN_ENTITY_CODE = 14;
     public String name;
     public int age;
 
@@ -16,4 +17,9 @@ public class Human extends db.Entity {
 
         return copyHuman;
     }
+
+    public int getEntityCode(){
+        return HUMAN_ENTITY_CODE;
+    }
+
 }
