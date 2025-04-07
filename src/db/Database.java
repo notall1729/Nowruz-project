@@ -3,9 +3,9 @@ package db;
 import db.exception.EntityNotFoundException;
 import db.exception.InvalidEntityException;
 
-import javax.crypto.spec.IvParameterSpec;
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.time.Instant;
+import java.util.*;
+import java.sql.Date;
 
 public class Database {
     private static ArrayList<Entity> entities = new ArrayList<>();
@@ -16,6 +16,13 @@ public class Database {
 
         e.copy().id = entities.size() + 1;
         entities.add(e.copy());
+
+        if(e instanceof Trackable){
+           Trackable trackable = (Trackable) e;
+            Date now = new Date(Instant.now().toEpochMilli());
+            trackable.setCreationDate(now);
+            trackable.setLastModificationDate(now);
+        }
     }
 
     public static Entity get(int id) throws EntityNotFoundException{
@@ -39,6 +46,13 @@ public class Database {
 
     public static void update(Entity e) throws EntityNotFoundException, InvalidEntityException {
         validateEntity(e);
+
+        if(e instanceof Trackable){
+            Trackable trackable = (Trackable) e;
+            Date now = new Date(Instant.now().toEpochMilli());
+            trackable.setLastModificationDate(now);
+        }
+
         for (int i = 0; i < entities.size(); i++){
             if(entities.get(i).id == e.id){
                 entities.set(i, e.copy());

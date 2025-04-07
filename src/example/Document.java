@@ -2,8 +2,6 @@ package example;
 
 import db.Entity;
 import db.Trackable;
-
-import java.security.PublicKey;
 import java.sql.Date;
 
 public class Document extends Entity implements Trackable{
