@@ -2,7 +2,7 @@ package example;
 
 import db.Entity;
 import db.Trackable;
-import java.sql.Date;
+import java.util.*;
 
 public class Document extends Entity implements Trackable{
     public String content;
@@ -14,9 +14,11 @@ public class Document extends Entity implements Trackable{
         this.content = content;
     }
 
-    @Override
     public void setCreationDate(Date date){
-        this.creationDate = date;
+        if(date == null)
+            this.creationDate = null;
+        else
+            this.creationDate = new Date(date.getTime());
     }
 
     @Override
@@ -24,9 +26,11 @@ public class Document extends Entity implements Trackable{
         return creationDate;
     }
 
-    @Override
     public void setLastModificationDate(Date date){
-        this.lastModificationDate = date;
+        if(date == null)
+           this.lastModificationDate = null;
+        else
+            this.lastModificationDate = new Date(date.getTime());
     }
 
     @Override
@@ -38,6 +42,12 @@ public class Document extends Entity implements Trackable{
     public Document copy(){
         Document copyDocument = new Document(content);
         copyDocument.id = id;
+      if(this.creationDate != null)
+          copyDocument.creationDate = new Date(this.creationDate.getTime());
+
+      if(this.lastModificationDate != null)
+          copyDocument.lastModificationDate = new Date(this.lastModificationDate.getTime());
+
 
         return copyDocument;
     }
