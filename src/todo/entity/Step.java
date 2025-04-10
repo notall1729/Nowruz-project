@@ -27,4 +27,12 @@ public class Step extends Entity{
     public int getEntityCode() {
         return STEP_ENTITY_CODE;
     }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public int getTaskRef() {
+        return taskRef;
+    }
 }
