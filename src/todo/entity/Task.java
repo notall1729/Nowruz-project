@@ -51,6 +51,10 @@ public class Task extends Entity implements Trackable{
         return TASK_ENTITY_CODE;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
     @Override
     public Task copy(){
         Task copyTask = new Task(title, description, dueDate);
