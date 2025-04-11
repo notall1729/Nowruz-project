@@ -19,7 +19,7 @@ public class Task extends Entity implements Trackable{
         this.title = title;
         this.description = description;
         this.dueDate = dueDate;
-        this.status = status.NotStarted;
+        this.status = status.NOTSTARTED;
     }
 
     public void setCreationDate(Date date){
@@ -70,10 +70,34 @@ public class Task extends Entity implements Trackable{
     }
 
     public enum Status{
-        NotStarted, InProgress, Completed
+        NOTSTARTED, INPROGRESS, COMPLETED
     }
 
     public void setStatus(Status status){
         this.status = status;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setDueDate(Date dueDate) {
+        this.dueDate = dueDate;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public Date getDueDate() {
+        return dueDate;
+    }
+
+    public Status getStatus() {
+        return status;
     }
 }

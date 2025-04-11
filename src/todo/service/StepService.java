@@ -11,9 +11,9 @@ public class StepService {
     }
 
     public static void completeStep(int stepId) throws InvalidEntityException{
-        Step step = (Step)Database.get(Step.class, stepId);
+        Step step = (Step)Database.get(stepId);
         if(step != null)
-            step.setStatus(step.status.Completed);
+            step.setStatus(step.status.COMPLETED);
 
         Database.update(step);
     }

@@ -17,7 +17,7 @@ public class StepValidator implements Validator {
         if(step.getTitle() == null || step.getTitle().trim().isEmpty()){
             throw new InvalidEntityException("Title cannot be null or empty.");
         }
-        if(Database.get(Task.class, step.getTaskRef()) == null){
+        if(Database.get(step.getTaskRef()) == null){
             throw new InvalidEntityException("Cannot find task with ID = " + step.getTaskRef());
         }
     }

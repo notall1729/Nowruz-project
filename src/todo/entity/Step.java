@@ -7,13 +7,13 @@ public class Step extends Entity{
     public static final int STEP_ENTITY_CODE = 29;
 
     public enum Status{
-        NotStarted, Completed
+        NOTSTARTED, COMPLETED
     }
 
     public Step (String title, int taskRef){
         this.title = title;
         this.taskRef = taskRef;
-        this.status = status.NotStarted;
+        this.status = status.NOTSTARTED;
     }
 
     public Step copy(){
@@ -36,7 +36,15 @@ public class Step extends Entity{
         return taskRef;
     }
 
+    public Status getStatus() {
+        return status;
+    }
+
     public void setStatus(Status status) {
         this.status = status;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 }
