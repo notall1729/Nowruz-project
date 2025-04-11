@@ -10,7 +10,7 @@ public class Task extends Entity implements Trackable{
     private String title;
     public String description;
     private Date dueDate;
-    public status status;
+    public Status status;
     private Date creationDate;
     private Date lastModificationDate;
     public static final int TASK_ENTITY_CODE = 23;
@@ -69,11 +69,11 @@ public class Task extends Entity implements Trackable{
         return copyTask;
     }
 
-    public enum status{
+    public enum Status{
         NotStarted, InProgress, Completed
     }
 
-    public void setStatus(status status){
+    public void setStatus(Status status){
         this.status = status;
     }
 }
