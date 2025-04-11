@@ -2,11 +2,11 @@ package todo.entity;
 import db.Entity;
 public class Step extends Entity{
     private String title;
-    public status status;
+    public Status status;
     private int taskRef;
     public static final int STEP_ENTITY_CODE = 29;
 
-    public enum status{
+    public enum Status{
         NotStarted, Completed
     }
 
@@ -34,5 +34,9 @@ public class Step extends Entity{
 
     public int getTaskRef() {
         return taskRef;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
     }
 }
