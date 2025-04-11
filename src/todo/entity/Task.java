@@ -4,6 +4,7 @@ import db.Entity;
 import db.Trackable;
 
 import java.util.Date;
+import java.util.Stack;
 
 public class Task extends Entity implements Trackable{
     private String title;
@@ -70,5 +71,9 @@ public class Task extends Entity implements Trackable{
 
     public enum status{
         NotStarted, InProgress, Completed
+    }
+
+    public void setStatus(status status){
+        this.status = status;
     }
 }
