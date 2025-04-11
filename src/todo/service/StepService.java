@@ -1,4 +1,21 @@
 package todo.service;
 
+import db.Database;
+import db.exception.InvalidEntityException;
+import todo.entity.Step;
+import todo.entity.Step.status;
+
 public class StepService {
+    public static void saveStep(int taskRef, String title) throws InvalidEntityException {
+        Step step = new Step(title, taskRef);
+        Database.add(step);
+    }
+
+    public static void completeStep(int stepId) throws InvalidEntityException{
+        Step step = (Step)Database.get(Step.class, stepId);
+        if(step != null)
+            step.setStatus(step.status.Completed);
+
+        Database.update(step);
+    }
 }
