@@ -1,0 +1,314 @@
+[33mcommit 85673e6646e180fa09888da72f725165d07e42ff[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32madd-to-do-list[m[33m)[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Thu Apr 10 18:18:59 2025 +0330
+
+    add StepValidator
+
+[33mcommit 1b9ceaa4668609ea753bf5705f35263c84f9b3cf[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Thu Apr 10 18:17:54 2025 +0330
+
+    add TaskValidator commands
+
+[33mcommit 58713a677c9ef885a1d05a85fee734f94175ad49[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Thu Apr 10 18:06:01 2025 +0330
+
+    add TaskValidator
+
+[33mcommit 11c81d056e41c6301233abe091436e00cd3e9ccc[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Thu Apr 10 18:04:09 2025 +0330
+
+    add Step commands
+
+[33mcommit 8572062e84e14dff549d6409f3485b203b5a02cb[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Thu Apr 10 17:53:20 2025 +0330
+
+    add Step
+
+[33mcommit a663566a49d782250a3260c6f6eecfd3e0be3f4b[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Thu Apr 10 17:52:22 2025 +0330
+
+    add Task commands
+
+[33mcommit 04432cb83d2a5ddbda69125beb335803b2709bb7[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Mon Apr 7 20:50:47 2025 +0330
+
+    add Task
+
+[33mcommit 1e299e705df4470ae37aafb6e7caf39b6ae67a98[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Mon Apr 7 20:49:49 2025 +0330
+
+    delete example classes
+
+[33mcommit e9d6a2acda35526e733181d93e236e6a63294054[m[33m ([m[1;31morigin/add-build-and-change-time[m[33m, [m[1;32madd-build-and-change-time[m[33m)[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Mon Apr 7 20:33:14 2025 +0330
+
+    fix some mistakes
+
+[33mcommit 70318cf908e4e53c6c4f788fb7822d51a275d99d[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Mon Apr 7 11:48:37 2025 +0330
+
+    change main commands
+
+[33mcommit a34b86aba73ee3a4d2232188a2976a9537a1c97a[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Mon Apr 7 11:36:07 2025 +0330
+
+    update add and update methods in Database
+
+[33mcommit be43f191a41b56000f8f63bd6b1c8a915a8e48bf[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Sun Apr 6 09:51:56 2025 +0330
+
+    update Document commands
+
+[33mcommit e96fee8082a3ad8b4893bbf6398276541fda6675[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Sun Apr 6 09:40:16 2025 +0330
+
+    add Document commands
+
+[33mcommit d5b7906ab384cd7d0018ed1dd480660122eb9866[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Sun Apr 6 09:26:20 2025 +0330
+
+    add Document
+
+[33mcommit 8ddb114f5155168b8097deac312ea9dc3742bb1b[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Sun Apr 6 09:24:59 2025 +0330
+
+    add Trackable commands
+
+[33mcommit ad8ae901b6f38584aba6c7dc7b3ae1b5ec871f55[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Sun Apr 6 09:21:12 2025 +0330
+
+    add Trackable interface
+
+[33mcommit e09e4f18932aa239191e39c61cd3e7d1e694dd5a[m[33m ([m[1;31morigin/add-validator[m[33m, [m[1;32madd-validator[m[33m)[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Sat Apr 5 20:45:12 2025 +0330
+
+    change main
+
+[33mcommit 57a24932403a4ce7c600ade7ee6acce1e29e396c[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Sat Apr 5 20:42:51 2025 +0330
+
+    update Database
+
+[33mcommit f394d3d49a18e758555946047d13d15dd1913005[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Sat Apr 5 20:27:18 2025 +0330
+
+    implementing getEntityCode in the Human
+
+[33mcommit d863a995ad7e6b789ce4b7d66323b8c043a4680c[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Sat Apr 5 20:24:06 2025 +0330
+
+    add abstract getEntityCode to Entity
+
+[33mcommit b40edafbd91d9a9af2eccf7d691d8258eb270d7f[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Sat Apr 5 20:22:02 2025 +0330
+
+    add HumanValidator commands
+
+[33mcommit 8af4a0b5aefb64dbabfa513c5892dc0bac299063[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Sat Apr 5 20:15:00 2025 +0330
+
+    add HumanValidator
+
+[33mcommit 707a793bb7f410cc17715e262952b2bb157c8418[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Sat Apr 5 20:13:23 2025 +0330
+
+    add Validator commands
+
+[33mcommit 6b36d70214d3db20a01685da0c3ea0e1ffae6b60[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Sat Apr 5 20:12:02 2025 +0330
+
+    add Validator interface
+
+[33mcommit 5a41e05c884ee406b4c5ddc824ca96ec0980de24[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Sat Apr 5 20:10:28 2025 +0330
+
+    add InvalidEntityException commands
+
+[33mcommit b13483f541db8b161277582188a4c517e057860d[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Sat Apr 5 20:07:44 2025 +0330
+
+    add InvalidEntityException
+
+[33mcommit 04c69253cda5541253a15a8d8346780380106667[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Sat Apr 5 20:06:12 2025 +0330
+
+    add age field to Human
+
+[33mcommit 5bec4efb345c297e733266867380935a95630cc8[m[33m ([m[1;32mmain[m[33m)[m
+Author: notall1729 <zeynabshirafkan63@gmail.com>
+Date:   Fri Apr 4 17:44:01 2025 +0330
+
+    Delete README.md
+
+[33mcommit 4addd2603dcc5bb7639846eb5b3e10a4e10b5af0[m
+Merge: 115f640 754a23c
+Author: notall1729 <zeynabshirafkan63@gmail.com>
+Date:   Fri Apr 4 17:36:26 2025 +0330
+
+    Merge pull request #3 from notall1729/add-validators
+    
+    Initial commit
+
+[33mcommit 754a23c821c025056746453d365898b046c87290[m[33m ([m[1;31morigin/<add-validators>[m[33m)[m
+Author: notall1729 <zeynabshirafkan63@gmail.com>
+Date:   Sat Mar 22 15:26:47 2025 +0330
+
+    Initial commit
+
+[33mcommit 115f640019861a5d8653a110e945aefcc0c3b7f6[m
+Merge: 72eb853 5e26a7c
+Author: notall1729 <zeynabshirafkan63@gmail.com>
+Date:   Thu Mar 27 04:30:10 2025 +0330
+
+    Merge pull request #2 from notall1729/copying-objects
+    
+    step#2: Copying objects
+
+[33mcommit 5e26a7ca66a9bd2a1cd117f71f9becb667ff23d5[m[33m ([m[1;31morigin/copying-objects[m[33m)[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Thu Mar 27 04:28:20 2025 +0330
+
+    change main code
+
+[33mcommit e7a995eb00f12e855ce84eedc2771d1afd61b6e0[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Thu Mar 27 03:59:24 2025 +0330
+
+    Use entities.copy() instead entities in Database
+
+[33mcommit a8cc79a1e0fbf6d7f8290cf005ea58fe1a23107d[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Thu Mar 27 03:55:32 2025 +0330
+
+    add an abstract method copy to the Entity class
+
+[33mcommit 72eb853c53272c5ffd800c6c2518bc3f2db4a249[m
+Merge: 02944df b3c890c
+Author: notall1729 <zeynabshirafkan63@gmail.com>
+Date:   Thu Mar 27 03:49:39 2025 +0330
+
+    Merge pull request #1 from notall1729/Database-design
+    
+    step#1: Database design
+
+[33mcommit b3c890ce4112d33fb41c790c392b63369ff1e231[m[33m ([m[1;31morigin/Database-design[m[33m)[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Thu Mar 27 03:42:04 2025 +0330
+
+    add main code
+
+[33mcommit 73d85f6a957291eb5012320f32ec520815f4656d[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Thu Mar 27 03:37:28 2025 +0330
+
+    countinue Human
+
+[33mcommit 9b1d147b8fd5879983ee97875a554218d2416444[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Thu Mar 27 03:36:26 2025 +0330
+
+    add Human
+
+[33mcommit 4af696dde78d4620254f920b4ada3ff05c42e48f[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Thu Mar 27 03:34:26 2025 +0330
+
+    countinue EntityNotFoundException
+
+[33mcommit eb67587b019f566546416791aa5656ba8265ceb6[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Thu Mar 27 03:31:55 2025 +0330
+
+    add EntityNotFoundException
+
+[33mcommit 27318f7a2066d4023eea74dfa7c65de4a672620d[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Thu Mar 27 03:30:23 2025 +0330
+
+    add method update to the class Database
+
+[33mcommit 2da2fca98191a7242426283a2da66e957b2b503c[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Thu Mar 27 03:28:46 2025 +0330
+
+    add method delete to the class Database
+
+[33mcommit a63d2a4879b62f315bc3db3bb3e6010d9099760d[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Thu Mar 27 03:27:04 2025 +0330
+
+    add method get to the class Database
+
+[33mcommit e360a3ac68dd79b95921d8451b3fc4d999802519[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Thu Mar 27 03:25:07 2025 +0330
+
+    add method add to the class Database
+
+[33mcommit 502ffab5fd7ff6c6776ccd5db8a70678db5ba022[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Thu Mar 27 03:20:40 2025 +0330
+
+    add Database
+
+[33mcommit df12ed59958a8044a5d22c258fb2c12e323a8c2d[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Thu Mar 27 03:17:49 2025 +0330
+
+    countinue Entity
+
+[33mcommit 39fd7b5a7f720ba934adbdcdc027a980acaaa229[m
+Author: goli <shirafkanzeynab63@gmail.com>
+Date:   Thu Mar 27 03:15:50 2025 +0330
+
+    add Entity
+
+[33mcommit 02944df899886774cde32d3593e6958be03d2395[m
+Author: notall1729 <zeynabshirafkan63@gmail.com>
+Date:   Thu Mar 27 02:57:23 2025 +0330
+
+    Rename README.md to README.txt
+
+[33mcommit e8f56c95b5c76312767cc1b5121225551b82697f[m
+Author: notall1729 <zeynabshirafkan63@gmail.com>
+Date:   Thu Mar 27 02:56:20 2025 +0330
+
+    add .gitignore
+
+[33mcommit f8ecad0626bc473fa0a10eb9d95e494d2e43319d[m
+Author: notall1729 <zeynabshirafkan63@gmail.com>
+Date:   Thu Mar 27 02:55:09 2025 +0330
+
+    add src
+
+[33mcommit 85ad1d5fc15981ac1230fae7c16b7854fd5d7fb9[m
+Author: notall1729 <zeynabshirafkan63@gmail.com>
+Date:   Thu Mar 27 02:53:32 2025 +0330
+
+    Initial commit
