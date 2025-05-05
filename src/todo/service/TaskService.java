@@ -24,7 +24,7 @@ public class TaskService {
     }
 
     public static void createTask(String title, String description, Date dueDate) throws InvalidEntityException{
-        Task task = new Task(title, description, dueDate);
+        Task task = new Task(title, description, dueDate, Task.count);
         Database.add(task);
     }
 
