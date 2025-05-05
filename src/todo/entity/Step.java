@@ -5,19 +5,21 @@ public class Step extends Entity{
     public Status status;
     private int taskRef;
     public static final int STEP_ENTITY_CODE = 29;
+    public static int stepCount = 1;
 
     public enum Status{
         NOTSTARTED, COMPLETED
     }
 
-    public Step (String title, int taskRef){
+    public Step (String title, int taskRef, int count){
         this.title = title;
         this.taskRef = taskRef;
         this.status = status.NOTSTARTED;
+        this.id = count;
     }
 
     public Step copy(){
-        Step copyStep = new Step(title, taskRef);
+        Step copyStep = new Step(title, taskRef, Step.stepCount);
         copyStep.id = id;
 
         return copyStep;

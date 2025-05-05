@@ -6,7 +6,7 @@ import todo.entity.Step;
 
 public class StepService {
     public static void saveStep(int taskRef, String title) throws InvalidEntityException {
-        Step step = new Step(title, taskRef);
+        Step step = new Step(title, taskRef, Step.stepCount);
         Database.add(step);
     }
 

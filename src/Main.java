@@ -1,6 +1,7 @@
 import db.Entity;
 import db.exception.EntityNotFoundException;
 import db.exception.InvalidEntityException;
+import todo.entity.Task;
 
 import java.text.ParseException;
 import java.util.*;
@@ -65,17 +66,18 @@ public class Main {
         }
     }
     public static void addTask() throws InvalidEntityException, ParseException {
-        System.out.println("Title: ");
+        System.out.println("Title:");
         String title = scanner.nextLine();
 
-        System.out.println("Description: ");
+        System.out.println("Description:");
         String description = scanner.nextLine();
 
-        System.out.println("Due date: ");
+        System.out.println("Due date:");
         Date date = dateFormat.parse(scanner.nextLine());
         try {
-            Task task = new Task(title, description, date);
+            Task task = new Task(title, description, date, Task.count);
             Database.add(task);
+            Task.count ++;
             System.out.println("Task saved successfully.\nID: " + task.id);
         } catch (Exception e){
             System.out.println("Cannot save task.");
@@ -84,14 +86,16 @@ public class Main {
     }
 
     public static void addStep() throws InvalidEntityException{
-        System.out.println("TaskID: ");
+        System.out.println("TaskID:");
         int TaskID = scanner.nextInt();
 
-        System.out.println("Title: ");
+        System.out.println("Title:");
+        scanner.nextLine();
         String title = scanner.nextLine();
 
         try{
-            Step step = new Step(title, TaskID);
+            Step step = new Step(title, TaskID, Step.stepCount);
+            Step.stepCount ++;
             Database.add(step);
             System.out.println("Step saved successfully.\nID: " + TaskID);
         }catch (Exception e){
@@ -101,7 +105,7 @@ public class Main {
     }
 
     public static void delete() throws EntityNotFoundException{
-        System.out.println("ID: ");
+        System.out.println("ID:");
         int ID = scanner.nextInt();
 
         try {
@@ -123,13 +127,14 @@ public class Main {
     }
 
     public static void updateTask() throws InvalidEntityException{
-        System.out.println("ID: ");
+        System.out.println("ID:");
         int ID = scanner.nextInt();
 
-        System.out.println("Field: ");
+        System.out.println("Field:");
+        scanner.nextLine();
         String field = scanner.nextLine();
 
-        System.out.println("New Value: ");
+        System.out.println("New Value:");
         String newValue = scanner.nextLine();
 
         try {
@@ -196,13 +201,13 @@ public class Main {
     }
 
     public static void updateStep() throws InvalidEntityException, EntityNotFoundException{
-     System.out.println("ID: ");
+     System.out.println("ID:");
      int ID = scanner.nextInt();
 
-     System.out.println("Field: ");
+     System.out.println("Field:");
      String field = scanner.nextLine();
 
-     System.out.println("New Value: ");
+     System.out.println("New Value:");
      String newValue = scanner.nextLine();
 
      try{
@@ -243,7 +248,7 @@ public class Main {
         }
     }
     private static void getTaskByID() throws EntityNotFoundException{
-        System.out.println("ID: ");
+        System.out.println("ID:");
         int ID = scanner.nextInt();
 
         try{
